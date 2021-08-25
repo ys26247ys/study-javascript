@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>サンプルHTML</title>
+</head>
+<body>
+    <h1>FizzBazz練習問題 </h1>
+    <h1>
+        <p>FizzBuzz問題では、1から何らかの値までを数え上げて（画面などに出力して）いく。ただし、その際には以下の条件がある。</p>
+        <p>その数が3で割り切れる時は、その数の代わりに「Fizz」を出力する</p>
+        <p>その数が5で割り切れる場合には、その数の代わりに「Buzz」を出力する</p>
+        <p>その数が3でも5でも割り切れる場合には、その数の代わりに「FizzBuzz」を出力する</p>
+        　<p>1から15の数え上げであれば、出力は「1→2→Fizz→4→Buzz→Fizz→7→8→Fizz→Buzz→11→Fizz→13→14→FizzBuzz」のようになる。</p>
+    </h1>
+
+
+    <script>
+        for(let number = 1; number <= 100; number++){
+            if(number % 15 === 0){
+                document.write("「FizzBuzz」");
+            }else if(number % 3 === 0){
+                document.write("「Fizz」");
+            }else if(number % 5 === 0){
+                document.write("「Buzz」")
+            }else{
+                document.write(number);
+            }
+        }
+    </script>
+</body>
