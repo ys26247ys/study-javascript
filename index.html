@@ -34,11 +34,62 @@
         }
 
         .header-right{
-            position:absolute;
+            position: absolute;
             right: 19px;
             bottom: 8px;
             font-size: 12px;
             line-height: 24px;
+            border: 0;
+            background-color: transparent;
+            color: rgba(255,255,255, 0.7);
+        }
+        .memi-list-item{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 19px;
+            padding-right: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.15);
+        }
+        .memo-list-title{
+            font-size: 16px;
+            line-height: 32px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: normal;
+        }
+        .memo-list-title-date{
+            font-size: 12px;
+            line-height: 16px;
+            color: #848484
+        }
+        .memo-list-item-deleta{
+            border: 0;
+            background-color: transparent;
+            color: #B0B0B0;
+            font-size: 20px;
+        }
+
+        .circle-bottom{
+            width: 64px;
+            height: 64px;
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+            background-color: rebeccapurple;
+            border-radius: 32px;
+            border: 0px;
+            color: white;
+            font-size: 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        .scroll{
+            height: calc(100% - 104px);
+            overflow-y: scroll;
         }
     </style>
 
@@ -48,53 +99,116 @@
             <div>
                 <div class = "header">
                     <h1 class = "header-title">Memo App</h1>
-                    <button class　= "header-right">ログアウト</button>
+                    <button class="header-right">ログアウト</button>
                 </div>
             </div>
 
             <!-- Scroll -->
-            <div>
+            <div class= "scroll">
                 <!-- memolist -->
                 <div>
                     <!-- memolist item-->
-                    <div>
+                    <div class="memi-list-item">
                         <div>
-                            <h3>買い物リスト</h3>
-                            <time>2020年12月24日</time>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
                         </div>
                         <div>
-                            <button>X</button>
+                            <button class="memo-list-item-deleta">X</button>
                         </div>
                     </div>
-                    <div>
+                    <div class="memi-list-item">
                         <div>
-                            <h3>買い物リスト</h3>
-                            <time>2020年12月24日</time>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
                         </div>
                         <div>
-                            <button>X</button>
+                            <button class="memo-list-item-deleta">X</button>
                         </div>
-                    </div> <div>
+                    </div><div class="memi-list-item">
                         <div>
-                            <h3>買い物リスト</h3>
-                            <time>2020年12月24日</time>
-                        </div>
-                        <div>
-                            <button>X</button>
-                        </div>
-                    </div> <div>
-                        <div>
-                            <h3>買い物リスト</h3>
-                            <time>2020年12月24日</time>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
                         </div>
                         <div>
-                            <button>X</button>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
+                        </div>
+                    </div><div class="memi-list-item">
+                        <div>
+                            <h3 class="memo-list-title">買い物リスト</h3>
+                            <time class="memo-list-title-date">2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button class="memo-list-item-deleta">X</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <button>＋</button>
         </div>
+        <button class="circle-bottom">＋</button>
     </body>
 </html>
