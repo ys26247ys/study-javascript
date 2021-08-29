@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+
+    <style>
+        html, body {
+            display: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .header{
+            height: 104px;
+            background-color: rebeccapurple;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .header-title{
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 8px;
+            color: white;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .header-right{
+            position:absolute;
+            right: 19px;
+            bottom: 8px;
+            font-size: 12px;
+            line-height: 24px;
+        }
+    </style>
+
+    <body>
+        <div class= "container">
+            <!-- Hwader -->
+            <div>
+                <div class = "header">
+                    <h1 class = "header-title">Memo App</h1>
+                    <button class　= "header-right">ログアウト</button>
+                </div>
+            </div>
+
+            <!-- Scroll -->
+            <div>
+                <!-- memolist -->
+                <div>
+                    <!-- memolist item-->
+                    <div>
+                        <div>
+                            <h3>買い物リスト</h3>
+                            <time>2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button>X</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>買い物リスト</h3>
+                            <time>2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button>X</button>
+                        </div>
+                    </div> <div>
+                        <div>
+                            <h3>買い物リスト</h3>
+                            <time>2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button>X</button>
+                        </div>
+                    </div> <div>
+                        <div>
+                            <h3>買い物リスト</h3>
+                            <time>2020年12月24日</time>
+                        </div>
+                        <div>
+                            <button>X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button>＋</button>
+        </div>
+    </body>
+</html>
